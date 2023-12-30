@@ -1,0 +1,23 @@
+{
+  "files": [
+    "src/enumDataTypes.js",
+    "src/enumIndices.js",
+    "src/enumReservedEdges.js",
+    "src/index.js",
+    "src/mutate.js",
+    "src/query.js",
+    "src/schema.js",
+    "src/typedefs.js",
+  ], // all src files with a .js extension
+  "compilerOptions": {
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "module": "NodeNext",
+    "target": "ES2017"
+  }
+}

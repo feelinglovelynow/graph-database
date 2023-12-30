@@ -1,0 +1,26 @@
+{
+  "files": [
+    "src/enumDataTypes.js",
+    "src/enumIndices.js",
+    "src/enumReservedEdges.js",
+    "src/index.js",
+    "src/mutate.js",
+    "src/query.js",
+    "src/schema.js",
+    "src/typedefs.js",
+  ], // all src files (including index.js) (not including .test.js)
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "declaration": true,
+    "strict": true,
+    "outDir": "tsc",
+    "declarationMap": true,
+    "module": "NodeNext", // use ESNext if .svelte components in /src
+    "target": "ES2017"
+  }
+}

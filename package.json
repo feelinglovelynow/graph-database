@@ -1,0 +1,40 @@
+{
+  "name": "@feelinglovelynow/graph-database",
+  "version": "1.0.0",
+  "description": "An open source graph database built with Cloudflare Durable Objects and Cloudflare Workers",
+  "author": "https://github.com/feelinglovelynow?tab=repositories",
+  "license": "MIT",
+  "type": "module",
+  "types": "./dist/index.ts",
+  "exports": "./dist/index.js",
+  "files": [
+    "dist",
+    "tsc",
+    "src"
+  ],
+  "keywords": [
+    "db",
+    "graph",
+    "database",
+    "graph database"
+  ],
+  "scripts": {
+    "watch": "pnpm tsc -w",
+    "build": "bash ./build.sh",
+    "cloud": "pnpm build && pnpm publish --access public .",
+    "test": "NODE_OPTIONS=--experimental-vm-modules pnpm jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feelinglovelynow/graph-database.git"
+  },
+  "bugs": {
+    "url": "https://github.com/feelinglovelynow/graph-database/issues"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "esbuild": "^0.19.11",
+    "jest": "^29.7.0",
+    "typescript": "^5.3.3"
+  }
+}
